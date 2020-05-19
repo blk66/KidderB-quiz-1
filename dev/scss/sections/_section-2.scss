@@ -1,0 +1,63 @@
+/* =============
+    Section 2
+============= */
+#section-2{
+    display: grid;
+  
+    @include lg{
+        grid-template-areas:"section-2-content section-2-image" ;
+        grid-template-columns: auto auto;
+    }
+   
+        
+   #section-2-container{
+       @include md{
+           grid-template-rows:"section-2-content legs";
+       }
+    }
+   
+   
+    #section-2-content{
+       grid-area: section-2-content ;
+       padding: 15px;
+       background-color: lightgray;
+       padding-bottom: 100px;
+       text-align: center;
+       
+       @include md{
+        text-align: left;
+        padding: 20px;
+
+       }
+       @include lg{
+        text-align: left;
+        padding: 130px;
+
+       }
+    }
+   
+    #legs{
+        background-image: url("../img/section-2/legs.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 320px;
+        grid-area: legs;
+
+        @include md{
+            grid-area: section-2-image;
+            height: 246px ;
+        }
+
+        @include lg{
+            height: 600px;
+        }
+
+        
+    }    
+     
+}
+    
+
+
+
+

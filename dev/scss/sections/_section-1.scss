@@ -1,0 +1,52 @@
+/* =============
+    Section 1
+============= */
+#section-1{
+ 
+    background-image: url('../img/section-1/waves.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat ;
+    height: 560px;
+    display: grid;
+    grid-template-areas: ". section-1-container . " 
+                            ". section-1-circle .";
+    grid-template-rows:40% auto 40% ;
+
+    @include md{
+        height: 694px ;
+   }
+
+   @include xl{
+       height: 959px ;
+   }
+
+   #section-1-container{
+    grid-area: section-1-container;
+    grid-template-areas:"section-1-text section-1-circle";
+    grid-template-columns: auto auto;
+    padding-top: 75px;
+    align-items: center;
+
+   }
+
+    #section-1-text{
+        grid-area: section-1-text;
+        padding: 40px;
+        position: center;
+        text-align: center;
+
+            h1{
+                color: $d-blue;
+            }
+            p{
+                color: $blue;
+            }
+    }
+    #section-1-circle{
+        grid-area: section-1-circle;
+        position: center;
+        align-items: center;
+    } 
+   
+}
