@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -97,8 +105,8 @@
 		"oA": 0,
 		"oAP": "/deploy/img/section-3/cards.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -108,9 +116,20 @@
 		"oA": 0,
 		"oAP": "/deploy/img/section-3/paper.png",
 		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/section-3/sign.jpg": {
+		"ft": 16384,
+		"iS": 32190,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-3/sign.jpg",
+		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/sign.png": {
@@ -213,14 +232,6 @@
 		"oA": 0,
 		"oAP": "/dev/footer.html",
 		"oF": 1
-		},
-	"/dev/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/index.html",
-		"oF": 0
 		},
 	"/dev/index.kit": {
 		"cB": 0,
@@ -484,7 +495,7 @@
 "projectAttributes": {
 	"creationDate": 611178114.81730402,
 	"displayValue": "KidderB-quiz-1",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_brown",
 	"iconImageWasSetByUser": 0
 	},

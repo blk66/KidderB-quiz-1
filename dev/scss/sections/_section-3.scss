@@ -3,65 +3,114 @@
 ============= */
 
 #section-3{
+    display: grid;
+    grid-template-areas: ". section-3 .";
+    grid-template-columns: 15px auto 15px;
+    padding: 44px 0 32px;
 
-    @include xl {
+    @include md{
+        grid-template-columns: auto 80% auto;
+        padding: 32px 0 40px;
+    }
+
+    @include xl{
         grid-template-columns: auto 1200px auto;
-        display: grid;
-        grid-template-areas: ". section-3-container ." ;
-    }
-
-    #section-3-Container{
-        color: black;
-        @include xl{
-            grid-area: section-3-container;
-        }
-    }
- 
-    #section-3-Journal{ 
-        text-align: center;
-
-    }
     
-    #section-3-list{
-    ul{
-        display: grid;
-        grid-gap: 20px;
-        grid-template-rows: repeat(3, 436px) ;
-
-    #sign{
-        background-image: url("../img/section-3/sign.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat ;
-        height: 436px;
-        @include md{
-            grid-area: sign ;
-                 
-        }
     }
 
-    #paper{
-        background-image: url("../img/section-3/paper.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat ;
-        height: 436px;
-        @include md{
-            grid-area: paper ;
-        }
-    }
+    >div{
+        grid-area: section-3;
+        
+        #section-3-title{
+            margin-bottom: 10px;
+            h1{
+                text-align: center;
+                font-size: rem-calc(35);
 
-    #cards{
-        background-image: url("../img/section-3/cards.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat ;
-        height: 436px;
-
-        @include md{
-            grid-area: cards ;
+            }
         }
-    }
+        #gallery{
+            ul{
+                display: grid;
+                gap: 20px;
+
+                @include md{
+                    display: grid;
+                    grid-template-areas: "gallery-1 gallery-1 gallery-2 gallery-2"
+                                          ". gallery-3 gallery-3 .";
+                }
+
+                @include lg{
+                    display: grid;
+                    grid-template-areas: "gallery-1 gallery-2 gallery-3";
+                                         
+
+                }
+                li{
+                    background-color: lightgray;
+                   
+                    div{
+                        height: 200px; 
+                        background-size: cover;      
+                    }
+
+                    section{
+                       padding: 20px;
+                        h1{
+                            text-align: center;
+                            font-size: rem-calc(35);
+                            font-family: 'Montserrat', sans-serif;
+                        }
+                        p{
+                            line-height: rem-calc(20);
+                            margin: 20px 0;
+        
+                        }
+                        h4{
+                            line-height: rem-calc(20);
+                            font-size: rem-calc(14);
+        
+                        }
+                    }
+                }
+
+                #gallery-1{
+                    div{
+                        background-image: url("../img/section-3/sign.png");
+                        height: 200px;
+                    }
+                    @include md{
+                        grid-area: gallery-1;
+    
+                    }
+                }
+                #gallery-2{
+                    div{
+                        background-image: url("../img/section-3/paper.png");
+                    }
+                    @include md{
+                        grid-area: gallery-2;
+    
+                    }
+                }
+                #gallery-3{
+                    div{
+                        background-image: url("../img/section-3/cards.png");              
+                    }
+                    @include md{
+                        grid-area: gallery-3;
+    
+                    }
+                }
+            }
+        }
     }
 }
-}
+     
+
+
+
+
+
+
+
